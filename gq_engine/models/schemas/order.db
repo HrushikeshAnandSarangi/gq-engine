@@ -1,0 +1,11 @@
+CREATE TABLE orders (
+    id SERIAL PRIMARY KEY,
+    symbol VARCHAR(20) NOT NULL,
+    order_type VARCHAR(20) NOT NULL, -- e.g., 'LIMIT', 'MARKET'
+    side VARCHAR(4) NOT NULL,       -- 'BUY' or 'SELL'
+    price NUMERIC(20, 8),           -- Can be NULL for Market orders
+    quantity NUMERIC(20, 8) NOT NULL,
+    status VARCHAR(20) NOT NULL,    -- e.g., 'OPEN', 'PARTIALLY_FILLED', 'FILLED', 'CANCELLED'
+    created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+);
