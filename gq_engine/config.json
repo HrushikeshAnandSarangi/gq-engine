@@ -49,11 +49,11 @@
             //port: Server port, 5432 by default
             "port": 5432,
             //dbname: Database name
-            "dbname": "test",
+            "dbname": "gq_engine",
             //user: 'postgres' by default
-            "user": "",
+            "user": "postgres",
             //passwd: '' by default
-            "passwd": "",
+            "passwd": "123456",
             //is_fast: false by default, if it is true, the client is faster but user can't call
             //any synchronous interface of it.
             "is_fast": false,
@@ -66,7 +66,7 @@
             //timeout: -1.0 by default, in seconds, the timeout for executing a SQL query.
             //zero or negative value means no timeout.
             "timeout": -1.0,
-            //auto_batch: this feature is only available for the PostgreSQL driver(version >= 14.0), see
+            //auto_batch: this fe;ature is only available for the PostgreSQL driver(version >= 14.0), see
             //the wiki for more details.
             "auto_batch": false
             //connect_options: extra options for the connection. Only works for PostgreSQL now.
